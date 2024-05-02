@@ -42,22 +42,24 @@
         <section id="education">
             <div class="wrap">
                 <h2>Conference Papers</h2>
-                <li>
-                    <p>
-                        Si Wu, Guantian Lin, Patrick P. C. Lee, Cheng Li, and Yinlong Xu.<br>
-                        "Optimal Wide Stripe Generation in Locally Repairable Codes via Staged Stripe Merging."<br>
-                        Proceedings of the 44th IEEE International Conference on Distributed Computing Systems (ICDCS 2024). Accepted.<br>
-                        [<a href="https://github.com/hhlgt/staged-stripe-merging">code</a>]
-                    </p>
-                    <details>
-                        <summary>
-                            Abstract
-                        </summary>
-                        <font size=3>
-                            Large-scale storage systems increasingly adopt erasure coding for low-cost reliable storage by storing stripes of data and parity blocks. To further achieve higher storage savings with performance guarantees, enterprises and academia explore wide stripes with locally repairable codes (LRCs). However, how to efficiently generate wide LRC stripes remains a non-trivial issue. Current approaches on stripe merging provide a starting point for merging narrow LRC stripes into wide LRC stripes, but they lack flexibility in the number of stripes being merged and the stripe width of the wide LRC stripes being formed. In this paper, we propose staged stripe merging for wide stripe generation in LRCs, by allowing a flexible number of narrow LRC stripes to be gradually merged into a wide stripe in multiple stages with optimality guarantees. In particular, we design an optimal data placement scheme for a group of narrow LRC stripes to be merged, such that it provably minimizes the cross-cluster network traffic for stripe merging across each stage, while maintaining the repair efficiency of LRCs. We implement the optimal data placement scheme for two production LRC constructions in a distributed storage prototype. Evaluation shows that our optimal data placement scheme significantly reduces the stripe merging time compared with several baselines.
-                        </font>
-                    </details>
-                </li>
+                <ol>
+                    <li>
+                        <p>
+                            Si Wu, Guantian Lin, Patrick P. C. Lee, Cheng Li, and Yinlong Xu. <br>
+                            <b>"Optimal Wide Stripe Generation in Locally Repairable Codes via Staged Stripe Merging."</b> <br>
+                            Proceedings of the 44th IEEE International Conference on Distributed Computing Systems (ICDCS 2024). Accepted. <br>
+                            [<a href="https://github.com/hhlgt/staged-stripe-merging" target="_blank">code</a>]
+                        </p>
+                        <details>
+                            <summary>
+                                Abstract
+                            </summary>
+                            <font size=3>
+                                Large-scale storage systems increasingly adopt erasure coding for low-cost reliable storage by storing stripes of data and parity blocks. To further achieve higher storage savings with performance guarantees, enterprises and academia explore wide stripes with locally repairable codes (LRCs). However, how to efficiently generate wide LRC stripes remains a non-trivial issue. Current approaches on stripe merging provide a starting point for merging narrow LRC stripes into wide LRC stripes, but they lack flexibility in the number of stripes being merged and the stripe width of the wide LRC stripes being formed. In this paper, we propose staged stripe merging for wide stripe generation in LRCs, by allowing a flexible number of narrow LRC stripes to be gradually merged into a wide stripe in multiple stages with optimality guarantees. In particular, we design an optimal data placement scheme for a group of narrow LRC stripes to be merged, such that it provably minimizes the cross-cluster network traffic for stripe merging across each stage, while maintaining the repair efficiency of LRCs. We implement the optimal data placement scheme for two production LRC constructions in a distributed storage prototype. Evaluation shows that our optimal data placement scheme significantly reduces the stripe merging time compared with several baselines.
+                            </font>
+                        </details>
+                    </li>
+                </ol>
             </div>
         </section>
         <br>
