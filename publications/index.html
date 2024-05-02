@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/img/favicon.ico">
+    <title>Guantian Lin</title>
+    <link rel="stylesheet" type="text/css" href="/css/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="/css/iconfont/iconfont.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="avatar">
+            <img src="/img/icon.jpg" title="LGT" width="161px">
+        </div>
+        <div>
+            <h3 align="center">Guantian Lin</h3>
+            <p align="center" style="font-size:14px;">
+                <i class='social iconfont icon-chengshi1' style="font-size:16px;"></i> USTC, Hefei
+            </p>
+            <p align="center" style="font-size:14px;">
+                <i class='social iconfont icon-fl-jia' style="font-size:16px;"></i> Zhanjiang, Guangdong
+            </p>
+        </div>
+        <br>
+        <hr style="color:gray;">
+        <nav class="nav">
+            <a href="/">About</a>
+            <a href="/resume">Resume</a>
+            <a href="/publications">Publications</a>
+        </nav>
+    </aside>
+    <main>
+        <br>
+        <section>
+            <div class="wrap">
+                <h1>Publications</h1>
+                <hr style="color:#d0d7de">
+            </div>
+        </section>
+        <section id="education">
+            <div class="wrap">
+                <h2>Conference Papers</h2>
+                <li>
+                    <p>
+                        Si Wu, Guantian Lin, Patrick P. C. Lee, Cheng Li, and Yinlong Xu.<br>
+                        "Optimal Wide Stripe Generation in Locally Repairable Codes via Staged Stripe Merging."<br>
+                        Proceedings of the 44th IEEE International Conference on Distributed Computing Systems (ICDCS 2024). Accepted.<br>
+                        [<a href="https://github.com/hhlgt/staged-stripe-merging">code</a>]
+                    </p>
+                    <details>
+                        <summary>
+                            Abstract
+                        </summary>
+                        <font size=3>
+                            Large-scale storage systems increasingly adopt erasure coding for low-cost reliable storage by storing stripes of data and parity blocks. To further achieve higher storage savings with performance guarantees, enterprises and academia explore wide stripes with locally repairable codes (LRCs). However, how to efficiently generate wide LRC stripes remains a non-trivial issue. Current approaches on stripe merging provide a starting point for merging narrow LRC stripes into wide LRC stripes, but they lack flexibility in the number of stripes being merged and the stripe width of the wide LRC stripes being formed. In this paper, we propose staged stripe merging for wide stripe generation in LRCs, by allowing a flexible number of narrow LRC stripes to be gradually merged into a wide stripe in multiple stages with optimality guarantees. In particular, we design an optimal data placement scheme for a group of narrow LRC stripes to be merged, such that it provably minimizes the cross-cluster network traffic for stripe merging across each stage, while maintaining the repair efficiency of LRCs. We implement the optimal data placement scheme for two production LRC constructions in a distributed storage prototype. Evaluation shows that our optimal data placement scheme significantly reduces the stripe merging time compared with several baselines.
+                        </font>
+                    </details>
+                </li>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div align="center">
+                <br>
+                <table class="links" border="0">
+                    <tr>
+                        <td width="40px" align="center">
+                            <a href="https://github.com/hhlgt" title="github" target="_blank">
+                                <i class='social iconfont icon-github' style="font-size:25px;line-height: 50px;"></i>
+                            </a>
+                        </td>
+                        <td width="40px" align="center">
+                            <a href="mailto:guantianlin01@163.com" title="email">
+                                <i class='social iconfont icon-email' style="font-size:25px;line-height: 50px;"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    Copyright &copy; Guantian Lin 
+                    <script type="text/javascript">
+                        var time = new Date();
+                        var year = time.getFullYear();
+                        document.write(year);
+                    </script>
+                </p>
+                    Powered by <a href="https://hhlgt.github.io" style="color: #959595;">Guantian Lin</a> | 
+                    <!-- Default Statcounter code for hhlgt.github.io
+                    https://hhlgt.github.io/ -->
+                    <script type="text/javascript">
+                    var sc_project=12806229; 
+                    var sc_invisible=0; 
+                    var sc_security="11aa311e"; 
+                    var scJsHost = "https://";
+                    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+                    "statcounter.com/counter/counter.js'></"+"script>");
+                    </script>
+                    <noscript><div class="statcounter"><a title="Web Analytics"
+                    href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                    src="https://c.statcounter.com/12806229/0/11aa311e/0/" alt="Web Analytics"
+                    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+                    <!-- End of Statcounter Code -->
+                    visits
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
